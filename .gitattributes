@@ -1,0 +1,15 @@
+# Normalise les fins de ligne en LF dans le dépôt
+* text=auto eol=lf
+
+*.php   text eol=lf
+*.po    text eol=lf
+*.css   text eol=lf
+*.js    text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+
+# Fichiers binaires — ne jamais altérer (les .mo seraient corrompus sinon)
+*.mo    binary
+*.png   binary
+*.jpg   binary
+*.gif   binary

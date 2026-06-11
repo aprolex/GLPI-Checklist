@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Documentation GLPI
+    url: https://glpi-developer-documentation.readthedocs.io/en/master/
+    about: Documentation officielle pour le développement de plugins GLPI.
