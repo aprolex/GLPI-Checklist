@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Plugin GLPI Checklist 1.0.0\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Checklists"
+msgstr "Checklists"
+
+msgid "New checklist"
+msgstr "New checklist"
+
+msgid "To do"
+msgstr "To do"
+
+msgid "Done"
+msgstr "Done"
+
+msgid "Add exceptional task"
+msgstr "Add exceptional task"
+
+msgid "Exceptional task"
+msgstr "Exceptional task"
+
+msgid "History"
+msgstr "History"
+
+msgid "No history yet."
+msgstr "No history yet."
+
+msgid "Checklist templates"
+msgstr "Checklist templates"
+
+msgid "Notification delay (hours)"
+msgstr "Notification delay (hours)"
+
+msgid "0 = disabled"
+msgstr "0 = disabled"
+
+msgid "Tasks"
+msgstr "Tasks"
+
+msgid "marked as done"
+msgstr "marked as done"
+
+msgid "moved back to to-do"
+msgstr "moved back to to-do"
+
+msgid "reordered tasks"
+msgstr "reordered tasks"
+
+msgid "added exceptional task"
+msgstr "added exceptional task"

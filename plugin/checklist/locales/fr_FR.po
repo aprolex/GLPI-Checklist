@@ -1,0 +1,196 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Plugin GLPI Checklist 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09\n"
+"PO-Revision-Date: 2026-06-09\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Checklist"
+msgstr "Checklist"
+
+msgid "Checklists"
+msgstr "Checklists"
+
+msgid "Checklist template"
+msgstr "Modèle de checklist"
+
+msgid "Checklist templates"
+msgstr "Modèles de checklist"
+
+msgid "Template item"
+msgstr "Tâche du modèle"
+
+msgid "Template items"
+msgstr "Tâches du modèle"
+
+msgid "Checklist item"
+msgstr "Tâche"
+
+msgid "Checklist items"
+msgstr "Tâches"
+
+msgid "Checklist log"
+msgstr "Journal de checklist"
+
+msgid "Checklist logs"
+msgstr "Journaux de checklist"
+
+msgid "New checklist"
+msgstr "Nouvelle checklist"
+
+msgid "From template"
+msgstr "Depuis un modèle"
+
+msgid "Empty checklist"
+msgstr "Checklist vide"
+
+msgid "Create"
+msgstr "Créer"
+
+msgid "Add a template"
+msgstr "Ajouter un modèle"
+
+msgid "New template"
+msgstr "Nouveau modèle"
+
+msgid "Edit checklist template"
+msgstr "Modifier le modèle de checklist"
+
+msgid "New checklist template"
+msgstr "Nouveau modèle de checklist"
+
+msgid "Active"
+msgstr "Actif"
+
+msgid "Notification delay (hours)"
+msgstr "Délai de notification (heures)"
+
+msgid "0 = disabled"
+msgstr "0 = désactivé"
+
+msgid "Tasks"
+msgstr "Tâches"
+
+msgid "Task name"
+msgstr "Nom de la tâche"
+
+msgid "Rank"
+msgstr "Rang"
+
+msgid "Exceptional"
+msgstr "Exceptionnelle"
+
+msgid "Exceptional task"
+msgstr "Tâche exceptionnelle"
+
+msgid "Add exceptional task"
+msgstr "Ajouter une tâche exceptionnelle"
+
+msgid "No task yet."
+msgstr "Aucune tâche pour l'instant."
+
+msgid "No template yet. Create one!"
+msgstr "Aucun modèle. Créez-en un !"
+
+msgid "No checklist yet. Click «+ New checklist» to start."
+msgstr "Aucune checklist. Cliquez sur «+ Nouvelle checklist» pour commencer."
+
+msgid "To do"
+msgstr "À faire"
+
+msgid "Done"
+msgstr "Fait"
+
+msgid "History"
+msgstr "Historique"
+
+msgid "No history yet."
+msgstr "Aucun historique."
+
+msgid "Action"
+msgstr "Action"
+
+msgid "marked as done"
+msgstr "a marqué la tâche comme faite"
+
+msgid "moved back to to-do"
+msgstr "a remis la tâche en «À faire»"
+
+msgid "created task"
+msgstr "a créé la tâche"
+
+msgid "deleted task"
+msgstr "a supprimé la tâche"
+
+msgid "reordered tasks"
+msgstr "a réordonné les tâches"
+
+msgid "added exceptional task"
+msgstr "a ajouté une tâche exceptionnelle"
+
+msgid "e.g. Onboarding SIRH"
+msgstr "ex. Onboarding SIRH"
+
+msgid "Validate a checklist task"
+msgstr "Valider une tâche checklist"
+
+msgid "Validate checklist tasks"
+msgstr "Valider des tâches checklist"
+
+msgid "Validate selected"
+msgstr "Valider la sélection"
+
+msgid "All tasks are already done!"
+msgstr "Toutes les tâches sont déjà validées !"
+
+msgid "Loading error."
+msgstr "Erreur de chargement."
+
+msgid "An error occurred."
+msgstr "Une erreur est survenue."
+
+msgid "Manage checklist templates"
+msgstr "Gérer les modèles de checklists"
+
+msgid "Checklist assignment rules"
+msgstr "Règles d'association de checklists"
+
+msgid "Title / Name"
+msgstr "Titre / Nom"
+
+msgid "Assign checklist template"
+msgstr "Associer un modèle de checklist"
+
+msgid "Notification delay"
+msgstr "Délai de notification"
+
+msgid "Hours"
+msgstr "Heures"
+
+msgid "Days"
+msgstr "Jours"
+
+msgid "Weeks"
+msgstr "Semaines"
+
+msgid "Send notifications for overdue checklist tasks"
+msgstr "Envoyer les notifications des tâches de checklist en retard"
+
+msgid "overdue notification sent"
+msgstr "notification de retard envoyée"
+
+msgid "⏰ Overdue checklist task: «%1$s» (checklist «%2$s») has been pending for more than %3$d hour(s)."
+msgstr "⏰ Tâche de checklist en retard : «%1$s» (checklist «%2$s») est en attente depuis plus de %3$d heure(s)."
+
+msgid "Child entities"
+msgstr "Sous-entités"
+
+msgid "Search a template…"
+msgstr "Rechercher un modèle…"
+
+msgid "No matching template"
+msgstr "Aucun modèle correspondant"

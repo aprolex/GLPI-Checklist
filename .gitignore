@@ -1,0 +1,22 @@
+# .gitignore
+
+# Variables d'environnement (mots de passe !)
+.env
+.env.example
+
+# Données Docker
+docker/
+mariadb/
+docker-compose.yml
+# Données de claude
+.claude/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

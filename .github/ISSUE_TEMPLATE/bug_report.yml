@@ -1,0 +1,56 @@
+name: 🐛 Signaler un bug
+description: Rapporter un comportement inattendu du plugin
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre le temps de signaler ce bug. Renseignez un maximum de détails.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description du bug
+      description: Décrivez clairement le problème.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Étapes pour reproduire
+      placeholder: |
+        1. Aller sur '...'
+        2. Cliquer sur '...'
+        3. Voir l'erreur
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu
+    validations:
+      required: true
+  - type: input
+    id: glpi-version
+    attributes:
+      label: Version de GLPI
+      placeholder: "11.0.7"
+    validations:
+      required: true
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Version du plugin
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: php-version
+    attributes:
+      label: Version de PHP
+      placeholder: "8.2"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / captures d'écran
+      description: Extraits de `files/_log/php-errors.log`, console navigateur, captures…
+      render: shell

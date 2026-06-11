@@ -1,0 +1,8 @@
+/*
+ * Plugin GLPI Checklist — checklist.css
+ *
+ * Ce fichier est intentionnellement vide.
+ * Tous les styles sont injectés inline par PluginChecklistChecklist::injectAssets()
+ * afin de garantir leur chargement dans les onglets GLPI 11 (chargés dynamiquement
+ * via le routeur Symfony, qui ne sert pas les assets plugins dans ce contexte).
+ */
