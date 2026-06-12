@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <name>Checklist</name>
+   <key>checklist</key>
+   <state>stable</state>
+   <!-- Logo 40x40 : remplace par une vraie image hébergée (ou supprime cette ligne) -->
+   <logo>https://raw.githubusercontent.com/aprolex/GLPI-Checklist/main/.github/logo.png</logo>
+   <description>
+      <short>
+         <en>Operational checklists embedded in your GLPI items: reusable templates, Kanban view, automation rules and overdue notifications.</en>
+         <fr>Checklists opérationnelles intégrées à vos éléments GLPI : modèles réutilisables, vue Kanban, règles d'automatisation et notifications de retard.</fr>
+      </short>
+      <long>
+         <en>
+The Checklist plugin adds a **Checklists** tab to any GLPI item (Tickets, Computers, Phones, etc.).
+
+**Features**
+- Reusable checklist **templates** (CRUD, drag &amp; drop ordering, entity scoping)
+- **Kanban view** "To do" / "Done" with click toggle and drag &amp; drop
+- Several checklists per item, each with a progress bar
+- **Exceptional** ad-hoc tasks, distinct from locked template tasks
+- Immutable **history** per checklist
+- **GLPI rules engine** to automatically assign a template based on item type, title, ITIL category…
+- **Overdue notifications** via a CRON task, with a delay configurable per template in **hours / days / weeks**
+- Ticket **timeline integration**: "Validate a checklist task" button + automatic follow-up when a task is completed
+- Searchable template picker, **FR / EN** translations
+- Access control on every AJAX endpoint (no IDOR)
+         </en>
+         <fr>
+Le plugin Checklist ajoute un onglet **Checklists** à n'importe quel élément GLPI (Tickets, Ordinateurs, Téléphones, etc.).
+
+**Fonctionnalités**
+- **Modèles** de checklists réutilisables (CRUD, réordonnancement par glisser-déposer, gestion des entités)
+- **Vue Kanban** « À faire » / « Fait » avec bascule au clic et drag &amp; drop
+- Plusieurs checklists par élément, chacune avec sa barre de progression
+- Tâches **exceptionnelles** ad hoc, distinctes des tâches verrouillées issues du modèle
+- **Historique** immuable par checklist
+- **Moteur de règles GLPI** pour associer automatiquement un modèle selon le type d'élément, le titre, la catégorie ITIL…
+- **Notifications des tâches en retard** via une tâche CRON, délai configurable par modèle en **heures / jours / semaines**
+- **Intégration timeline** des tickets : bouton « Valider une tâche checklist » + suivi automatique à la complétion d'une tâche
+- Sélecteur de modèle avec recherche, traductions **FR / EN**
+- Contrôle d'accès sur chaque endpoint AJAX (anti-IDOR)
+         </fr>
+      </long>
+   </description>
+   <homepage>https://github.com/aprolex/GLPI-Checklist</homepage>
+   <download>https://github.com/aprolex/GLPI-Checklist/releases</download>
+   <issues>https://github.com/aprolex/GLPI-Checklist/issues</issues>
+   <readme>https://github.com/aprolex/GLPI-Checklist/blob/main/README.md</readme>
+   <changelog>https://github.com/aprolex/GLPI-Checklist/blob/main/CHANGELOG.md</changelog>
+   <authors>
+      <author>Aprolex</author>
+   </authors>
+   <versions>
+      <version>
+         <num>1.0.0</num>
+         <compatibility>~11.0</compatibility>
+         <download_url>https://github.com/aprolex/GLPI-Checklist/releases/download/v1.0.0/checklist-1.0.0.zip</download_url>
+      </version>
+   </versions>
+   <langs>
+      <lang>en_GB</lang>
+      <lang>fr_FR</lang>
+   </langs>
+   <license>GPL v3+</license>
+   <tags>
+      <en>
+         <tag>checklist</tag>
+         <tag>tasks</tag>
+         <tag>kanban</tag>
+         <tag>workflow</tag>
+         <tag>productivity</tag>
+      </en>
+      <fr>
+         <tag>checklist</tag>
+         <tag>tâches</tag>
+         <tag>kanban</tag>
+         <tag>workflow</tag>
+         <tag>productivité</tag>
+      </fr>
+   </tags>
+   <!-- Captures d'écran : remplace par de vraies images hébergées, ou supprime ce bloc -->
+   <screenshots>
+      <screenshot>https://raw.githubusercontent.com/aprolex/GLPI-Checklist/main/.github/screenshots/2026-06-12_230329.png</screenshot>
+      <screenshot>https://raw.githubusercontent.com/aprolex/GLPI-Checklist/main/.github/screenshots/2026-06-12_230359.png</screenshot>
+      <screenshot>https://raw.githubusercontent.com/aprolex/GLPI-Checklist/main/.github/screenshots/2026-06-12_230433.png</screenshot>
+   </screenshots>
+</root>
