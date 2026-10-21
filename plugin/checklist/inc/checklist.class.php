@@ -33,6 +33,12 @@ class PluginChecklistChecklist extends CommonDBTM
      */
     public function getTabNameForItem(CommonGLPI $item, $withtemplate = 0)
     {
+        // Certains plugins (ex. pdf : PluginPdfTicket) passent un CommonGLPI
+        // qui n'est pas un CommonDBTM et n'a donc pas de getID()
+        if (!($item instanceof CommonDBTM) || $item->isNewItem()) {
+            return '';
+        }
+
         $count = countElementsInTable(static::getTable(), [
             'itemtype' => $item->getType(),
             'items_id' => $item->getID(),
@@ -45,6 +51,10 @@ class PluginChecklistChecklist extends CommonDBTM
      */
     public static function displayTabContentForItem(CommonGLPI $item, $tabnum = 1, $withtemplate = 0): bool
     {
+        if (!($item instanceof CommonDBTM) || $item->isNewItem()) {
+            return false;
+        }
+
         self::showForItem($item);
         return true;
     }
