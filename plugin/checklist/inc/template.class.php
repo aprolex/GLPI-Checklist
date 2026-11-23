@@ -45,7 +45,7 @@ class PluginChecklistTemplate extends CommonDBTM
             return false;
         }
 
-        $web_dir = Plugin::getWebDir('checklist');
+        $web_dir = PluginChecklistChecklist::getWebDir();
         $menu = [
             'title' => static::getMenuName(),
             'page'  => $web_dir . '/front/template.php',
@@ -84,7 +84,7 @@ class PluginChecklistTemplate extends CommonDBTM
     public static function showList(): void
     {
         $templates = self::getAll(false);
-        $web_dir   = Plugin::getWebDir('checklist');
+        $web_dir   = PluginChecklistChecklist::getWebDir();
 
         echo '<div class="container-fluid">';
         echo '<div class="d-flex justify-content-between align-items-center mb-3">';
@@ -135,7 +135,7 @@ class PluginChecklistTemplate extends CommonDBTM
     public function showForm($ID, array $options = []): bool
     {
         $this->initForm($ID, $options);
-        $web_dir = Plugin::getWebDir('checklist');
+        $web_dir = PluginChecklistChecklist::getWebDir();
         $is_new  = $ID <= 0;
 
         echo '<form method="POST" action="' . $web_dir . '/front/template.form.php">';

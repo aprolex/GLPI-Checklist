@@ -193,7 +193,7 @@ function plugin_checklist_timeline_actions(array $params): void
 
     $items_id = (int) $item->getID();
     $itemtype = $item->getType();
-    $ajax_url = Plugin::getWebDir('checklist') . '/ajax';
+    $ajax_url = PluginChecklistChecklist::getWebDir() . '/ajax';
 
     static $modal_injected = false;
     if (!$modal_injected) {

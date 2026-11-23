@@ -9,6 +9,13 @@ class PluginChecklistChecklist extends CommonDBTM
 {
     public static $rightname = 'config';
 
+    /** URL web du plugin (Plugin::getWebDir() est déprécié en GLPI 11). */
+    public static function getWebDir(): string
+    {
+        global $CFG_GLPI;
+        return $CFG_GLPI['root_doc'] . '/plugins/checklist';
+    }
+
     public static function getIcon(): string
     {
         return 'fas fa-clipboard-check';
@@ -502,7 +509,7 @@ class PluginChecklistChecklist extends CommonDBTM
 
         $itemtype   = $item->getType();
         $items_id   = $item->getID();
-        $plugin_url = Plugin::getWebDir('checklist');
+        $plugin_url = PluginChecklistChecklist::getWebDir();
         $ajax_url   = $plugin_url . '/ajax';
 
         // Checklists existantes
@@ -541,7 +548,7 @@ class PluginChecklistChecklist extends CommonDBTM
         }
 
         // Lien gestion des templates
-        $tpl_url = Plugin::getWebDir('checklist') . '/front/template.php';
+        $tpl_url = PluginChecklistChecklist::getWebDir() . '/front/template.php';
         echo '<a class="cl-footer-link" href="' . htmlspecialchars($tpl_url) . '" target="_blank">';
         echo '<i class="fas fa-cog me-1"></i>' . __('Manage checklist templates', 'checklist') . '</a>';
 
@@ -778,7 +785,7 @@ class PluginChecklistChecklist extends CommonDBTM
                     'status'                         => 'todo',
                     'rank_todo'                      => (int) $tpi['rank'],
                     'rank_done'                      => 0,
-                    'is_exceptional'                 => 0,
+                    'is_exceptional'                 => (int) ($tpi['is_exceptional'] ?? 0),
                     'date_creation'                  => date('Y-m-d H:i:s'),
                     'date_mod'                       => date('Y-m-d H:i:s'),
                     'date_todo'                      => date('Y-m-d H:i:s'),

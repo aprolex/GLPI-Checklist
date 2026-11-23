@@ -53,9 +53,7 @@ class PluginChecklistItem extends CommonDBTM
             ['status' => $new_status]
         );
 
-        if ($new_status === 'done') {
-            self::addTicketFollowup($cl_id, $item->fields['name']);
-        }
+        self::addTicketFollowup($cl_id, $item->fields['name'], $new_status === 'done');
 
         return ['success' => true, 'new_status' => $new_status, 'item_id' => $item_id];
     }
@@ -63,7 +61,7 @@ class PluginChecklistItem extends CommonDBTM
     /**
      * Crée un suivi GLPI sur le ticket lié à la checklist, si applicable.
      */
-    private static function addTicketFollowup(int $cl_id, string $item_name): void
+    private static function addTicketFollowup(int $cl_id, string $item_name, bool $done = true): void
     {
         global $DB;
 
@@ -84,7 +82,9 @@ class PluginChecklistItem extends CommonDBTM
         }
 
         $content = sprintf(
-            '✅ Tâche <strong>«%s»</strong> validée via la checklist <em>«%s»</em>.',
+            $done
+                ? '✅ Tâche <strong>«%s»</strong> validée via la checklist <em>«%s»</em>.'
+                : '↩️ Tâche <strong>«%s»</strong> repassée à faire dans la checklist <em>«%s»</em>.',
             htmlspecialchars($item_name),
             htmlspecialchars($cl_name)
         );

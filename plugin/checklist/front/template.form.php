@@ -23,7 +23,7 @@ if (isset($_POST['notification_delay_unit'])
 if (isset($_POST['add'])) {
     // Création d'un nouveau template
     $new_id = $tpl->add($_POST);
-    Html::redirect(Plugin::getWebDir('checklist') . '/front/template.form.php?id=' . $new_id);
+    Html::redirect(PluginChecklistChecklist::getWebDir() . '/front/template.form.php?id=' . $new_id);
 }
 
 if (isset($_POST['update'])) {
@@ -33,7 +33,7 @@ if (isset($_POST['update'])) {
 
 if (isset($_POST['purge'])) {
     $tpl->delete($_POST, true);
-    Html::redirect(Plugin::getWebDir('checklist') . '/front/template.php');
+    Html::redirect(PluginChecklistChecklist::getWebDir() . '/front/template.php');
 }
 
 if (isset($_POST['add_item'])) {
