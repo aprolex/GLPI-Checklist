@@ -11,6 +11,14 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - API REST native GLPI + jeu de tests (Phase 9)
 - Droits fins par profil GLPI (Phase 10)
 
+## [1.0.1] - 2026-11-23
+
+### Corrigé
+- Les tâches exceptionnelles d'un modèle gardent leur statut (et leur affichage distinct) une fois la checklist ajoutée à un élément.
+- Un suivi est aussi créé sur le ticket quand une tâche repasse de « Fait » à « À faire ».
+- Suppression de l'avertissement GLPI 11 « All plugins resources should be accessed from the `/plugins/` path » (remplacement de `Plugin::getWebDir()`).
+- Les onglets demandés pour des éléments non `CommonDBTM` ou non enregistrés sont ignorés (erreur 500 à l'export PDF).
+
 ## [1.0.0] - 2026-06-10
 
 Première version publique. GLPI 11.0.x.
@@ -38,5 +46,6 @@ Première version publique. GLPI 11.0.x.
 - CSRF via le header `X-Glpi-Csrf-Token` de GLPI 11.
 - L'utilitaire de dev `compile_mo.php` est restreint à la CLI.
 
-[Non publié]: https://github.com/<votre-compte>/glpi-plugin-checklist/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/<votre-compte>/glpi-plugin-checklist/releases/tag/v1.0.0
+[Non publié]: https://github.com/aprolex/GLPI-Checklist/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/aprolex/GLPI-Checklist/releases/tag/v1.0.1
+[1.0.0]: https://github.com/aprolex/GLPI-Checklist/releases/tag/v1.0.0

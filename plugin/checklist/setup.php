@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-define('PLUGIN_CHECKLIST_VERSION', '1.0.0');
+define('PLUGIN_CHECKLIST_VERSION', '1.0.1');
 define('PLUGIN_CHECKLIST_MIN_GLPI', '11.0.0');
 define('PLUGIN_CHECKLIST_MAX_GLPI', '12.0.99');
 define('PLUGIN_CHECKLIST_DIR', __DIR__);

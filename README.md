@@ -7,7 +7,7 @@
 [![GLPI](https://img.shields.io/badge/GLPI-11.0.x-2c5a8c?logo=glpi&logoColor=white)](https://glpi-project.org)
 [![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?logo=php&logoColor=white)](https://www.php.net)
 [![License](https://img.shields.io/badge/license-GPL%20v3%2B-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-success.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.0.1-success.svg)](CHANGELOG.md)
 [![FR / EN](https://img.shields.io/badge/i18n-FR%20%2F%20EN-informational.svg)](plugin/checklist/locales)
 
 </div>
